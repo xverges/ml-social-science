@@ -2,25 +2,28 @@
 
 == First tools
 
-* Installed Asciidoctor using RVM, after installing-uninstalling it using brew and learned that I was in a dead end when I wanted to install a required gem.
+* Installed Asciidoctor using RVM, after installing-uninstalling it using brew and learned that I was in a dead end when I wanted to install additional required gems.
 +
 ----
+curl -#L https://get.rvm.io | bash -s stable --autolibs=3 --ruby
 gem install asciidoctor tilt thread_safe haml
 ----
 * Installed the https://chrome.google.com/webstore/detail/asciidoctorjs-live-previe/iaalpfgpbocpdfblpnhhgllgbdbchmia[Asciidoctor.js Live Preview] Chrome extension
 
 == The slide show
 
-* Created this repo. Went for a `src` folder for the content and a `docs` folder for github pages.
-* Created an `index.html` file in the `docs` folder, incluing a typo, committed, pushed, changed the setting to enable github pages and https://xverges.github.io/ml-social-science/ was available!
+* Created this repo. Went for a `src` folder for the content and a `docs` folder for github pages. The `docs` folder appriach look much more easy to manage than the traditional `gh-pages` branch.
+* Created an `index.html` file in the `docs` folder, including a typo, committed, pushed, changed the setting to enable github pages and https://xverges.github.io/ml-social-science/ was available!
+* https://github.com/bespokejs/bespoke[bespoke.js] looks nice, but seems to carry too much weight around it. It is minimalist, but it needs a quite specific tool-chain.
 * Decided to use the http://imakewebthings.com/deck.js/[deck.js] https://github.com/asciidoctor/asciidoctor-deck.js[backend] because it seems to support TOC, an important feature for me. Install looked simpler to install than the https://github.com/asciidoctor/asciidoctor-reveal.js[reveal.js backend] (at least, for a Ruby illiterate like me) 
 +
 [source,bash]
 ----
 git submodule add https://github.com/asciidoctor/asciidoctor-deck.js
+pushd docs && git submodule add https://github.com/imakewebthings/deck.js && popd
+asciidoctor -T asciidoctor-deck.js/templates/haml/ --destination-dir docs --out-file index.html src/intro.adoc
 ----
-
-
-* In order to be able to convert slide shows to PDF..
-
+* Well, no TOC after all.
+* Stop that! The `:menu:` attribute adds an overview mode triggered with `m`.
+* github happy with the use of submodules!
 

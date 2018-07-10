@@ -2,7 +2,7 @@
 Presenter Name
 :status:
 :navigation:
-:toc:
+:menu:
 
 == Slide One
 
