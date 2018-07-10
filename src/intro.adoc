@@ -1,0 +1,28 @@
+= Title Slide
+Presenter Name
+:status:
+:navigation:
+:toc:
+
+== Slide One
+
+Foo
+
+Bar
+
+World
+
+== Another Slide
+
+[%step]
+That's all.
+
+[%step]
+My Folks
+
+== Yet Another Slide
+
+[%step]
+* A
+* B
+* C

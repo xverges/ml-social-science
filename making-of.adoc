@@ -1,0 +1,26 @@
+= The Making-of these slides
+
+== First tools
+
+* Installed Asciidoctor using RVM, after installing-uninstalling it using brew and learned that I was in a dead end when I wanted to install a required gem.
++
+----
+gem install asciidoctor tilt thread_safe haml
+----
+* Installed the https://chrome.google.com/webstore/detail/asciidoctorjs-live-previe/iaalpfgpbocpdfblpnhhgllgbdbchmia[Asciidoctor.js Live Preview] Chrome extension
+
+== The slide show
+
+* Created this repo. Went for a `src` folder for the content and a `docs` folder for github pages.
+* Created an `index.html` file in the `docs` folder, incluing a typo, committed, pushed, changed the setting to enable github pages and https://xverges.github.io/ml-social-science/ was available!
+* Decided to use the http://imakewebthings.com/deck.js/[deck.js] https://github.com/asciidoctor/asciidoctor-deck.js[backend] because it seems to support TOC, an important feature for me. Install looked simpler to install than the https://github.com/asciidoctor/asciidoctor-reveal.js[reveal.js backend] (at least, for a Ruby illiterate like me) 
++
+[source,bash]
+----
+git submodule add https://github.com/asciidoctor/asciidoctor-deck.js
+----
+
+
+* In order to be able to convert slide shows to PDF..
+
+
