@@ -1,16 +1,258 @@
-= Title Slide
-Presenter Name
+// -*- coding: UTF-8 -*
+
+= Machine Learning and Social Science
+//Xavier Vergés <icon:calendar[]2018-07-12 icon:user[]ITAM/UPF icon:twitter[]@XavierVerges icon:tag[]IBM>
+Xavier Vergés <icon:twitter[]https://twitter.com/XavierVerges[@XavierVerges] icon:tag[]https://www.ibm.com/analytics/machine-learning[IBM]>
+:icons: font
+:encoding: UTF-8
 :status:
 :navigation:
 :menu:
+:deckjs_theme: swiss
+:customcss: css/xv.css
 
-== Slide One
+== Agenda
 
-Foo
+. How do _<insert noun>_ learn?
+. AI, ML, NLP, DL... Hints to navigate the alphabet soup
+. Five main routes to Machine Learning
+. Understanding or predicting?
 
-Bar
+== Objectives
 
-World
+. 
+
+
+== In Praise of Feedback Loops
+
+[%step]
+image::./images/feedback-loop.png[]
+
+[%step]
+[quote]
+Outputs of a system are routed back as inputs as part of a chain of cause-and-effect that forms a loop. *The system can then be said to feed back into itself*.
+
+
+== Excited about a thermostat? Seriously?
+
+[%step]
+image::./images/feedback-learn.png[]
+
+
+[%step]
+[quote]
+No feedback, no learning.
+
+[%step]
+[quote]
+No feedback, no science.
+
+
+[canvas-image=./images/evolution.jpg]
+== Evolution
+
+[.canvas-caption, position=xv-top-left]
+Evolution: +
+learning for genes  
+
+
+[canvas-image=./images/cuneiform.jpg]
+== Culture
+
+[.canvas-caption, position=xv-top-left]
+Culture: +
+learning for societies
+
+
+[canvas-image=./images/rosa-parks.jpg]
+== Culture
+
+[.canvas-caption, position=xv-top-left]
+Culture: +
+learning for societies +
+at a faster pace
+
+
+[canvas-image=./images/experience.jpg]
+== Experience
+
+[.canvas-caption, position=xv-top-left]
+Experience: +
+learning for individuals
+
+
+[canvas-image=./images/old-computer.jpg]
+== A new way to learn
+
+[.canvas-caption, position=xv-top-left]
+Information technology: +
+a new way to learn
+
+
+[canvas-image=./images/marenostrum.jpg]
+== A new way to learn
+
+[.canvas-caption, position=xv-top-left]
+Information technology: +
+a new way to learn +
+at a faster pace
+
+
+[canvas-image=./images/punch_card.jpg]
+== Punched Cards
+
+[.canvas-caption, position=xv-bottom-left]
+Think, write, +
+send to typist, +
+wait for typist, +
+wait for computer time slot...
+
+
+[canvas-image=missing]
+== A/B Testing
+
+[.canvas-caption, position=missing]
+image:./images/a-b-testing.png[]
+
+[.canvas-caption, position=xv-bottom-right]
+&#46;&#46;&#46; vs learn in a few hours +
+if your users like your new idea 
+
+
+[canvas-image=missing]
+== Ah! So Machine Learning is a fancy name for good old computing!
+
+[.canvas-caption, position=xv-top-left]
+Ah! So Machine Learning is +
+just a new fancy name for +
+good old computing?
+
+
+[canvas-image=./images/no.jpg]
+== Ah! So Machine Learning is a fancy name for good old computing!
+
+[.canvas-caption, position=xv-top-left]
+Ah! So Machine Learning is +
+just a new fancy name for +
+good old computing?
+
+
+[canvas-image=./images/cooking.jpg]
+== Traditional Algorithms
+
+[.canvas-caption, position=xv-top-left]
+image:./images/traditional-algorithms.png[]
+
+
+[canvas-image=./images/toddler.jpg]
+== Machine Learning Algorithms
+
+[.canvas-caption, position=xv-top-right]
+image:./images/ml-algorithms.png[]
+
+
+[canvas-image=./images/dictionary.jpg]
+== Alphabet Soup
+
+[.canvas-caption, position=xv-top-right]
+Alphabet Soup
+
+[canvas-image=./images/ai-ml-dl.png]
+== AI, ML and Deep Learning
+
+
+[canvas-image=./images/deep-blue.jpg]
+== The AI Effect
+
+[.canvas-caption, position=xv-top-left]
+The AI Effect: +
+As soon as AI solves a problem, +
+the problem is no longer a part of AI
+
+
+== Project Debater
+
+++++
+<iframe 
+    width="1120" height="630" 
+    src="https://www.youtube-nocookie.com/embed/UeF_N1r91RQ?rel=0" 
+    frameborder="0"
+    allow="autoplay; encrypted-media" allowfullscreen>
+</iframe>
+++++
+https://www.research.ibm.com/artificial-intelligence/project-debater/
+
+
+[canvas-image=./images/turkey.jpg]
+== The Inductivist Turkey induction
+
+[.canvas-caption, position=xv-bottom-right]
+9:00 AM!
+
+
+[canvas-image=./images/supervised-learning.png]
+== Supervised learning
+
+[.canvas-caption, position=xv-bottom-right]
+Supervised/Unsupervised Learning
+
+
+[canvas-image=./images/turkey.jpg]
+== The Inductivist Turkey business as usual
+
+
+[canvas-image=./images/turkey.jpg]
+== The Inductivist Turkey falsified
+
+[.canvas-caption, position=xv-bottom-right]
+Thanksgiving
+
+
+== The 5 Tribes of ML
+
+From *Pedro Domingo*'s  _The Master Algorithm_:
+
+[%step]
+* The Symbolists
+** Work with high-level, human-readable, representations of problems, logic and search
+** Expert Systems
+* The Connectionists
+** Focus on re-engineering the brain
+** Artificial Neural Networks (Deep Learning)
+* The Evolutionaries
+** Genetic Algorithms
+* The Bayesians
+** Probability-based hypothesis that are updated as more data is processed
+** Spam filters
+* The Analogizers 
+** Focus on techniques to match pieces of data to each other
+
+
+== How Machines Learn
+
+++++
+<iframe 
+    width="1120" height="630" 
+    src="https://www.youtube-nocookie.com/embed/R9OHn5ZF4Uo?rel=0" 
+    frameborder="0"
+    allow="autoplay; encrypted-media" allowfullscreen>
+</iframe>
+++++
+
+
+== How Machines *Really* Learn. [Footnote]
+
+++++
+<iframe 
+    width="1120" height="630" 
+    src="https://www.youtube-nocookie.com/embed/wvWpdrfoEv0?rel=0" 
+    frameborder="0"
+    allow="autoplay; encrypted-media" allowfullscreen>
+</iframe>
+++++
+
+
+
 
 == Another Slide
 
@@ -26,3 +268,37 @@ My Folks
 * A
 * B
 * C
+
+[canvas-image=missing]
+== {nbsp} 
+
+{nbsp} +
+{nbsp} +
+{nbsp} +
+{nbsp} +
+{nbsp} +
+Title-less
+
+[.canvas-caption, position=missing]
+juji
+== Image Attributions
+
+* Feedback Loop: https://commons.wikimedia.org/w/index.php?curid=35616027[By GliderMaven - Own work, CC0]
+* Learn-Adjust-Do: https://www.ibm.com/developerworks/community/blogs/beingagile/entry/short_feedback_loops_everywhere[IBM]
+* Evolution: http://www.flickr.com/photos/esteemedhelga/4457513670/[EDWW day_dae (esteemedhelga)/Flickr]
+* Cuneiform: https://www.flickr.com/photos/adavey/4735763989[A.Davey/Flickr]
+* Band Aid: https://www.flickr.com/photos/roadsidepictures/5541307774/[Roadsidepictures/Flickr]
+* IBM 2401 Tape Unit: https://flic.kr/p/a59Ng[Scott Beale/Flickr]
+* Marenostrum: https://www.bsc.es/marenostrum/marenostrum[Barcelona Supercomputing Center]
+* Punchcard: https://www.wired.com/2014/05/tech-time-warp-punched-cards/[Wired/IBM]
+* Mobile Device Farm: http://www.datacenterdynamics.com/content-tracks/design-build/facebook-runs-massive-mobile-test-lab-in-prineville-data-center/96594.fullarticle[Facebook]
+* A/B Testing: https://towardsdatascience.com/a-summary-of-udacity-a-b-testing-course-9ecc32dedbb1[Udacity/Google] 
+* No: https://flic.kr/p/bCB2Gb[Henry Burrows/Flickr]
+* AI vs ML diagram: https://blogs.nvidia.com/blog/2016/07/29/whats-difference-artificial-intelligence-machine-learning-deep-learning-ai/[NVIDIA]
+* Dictionary: https://flic.kr/p/Je9JdZ[barnimages.com/Flickr]
+* Deep Blue: https://rarehistoricalphotos.com/kasparov-deep-blue-1997/[Rare Historical Photos]
+* Cooking: https://www.publicdomainpictures.net/en/view-image.php?image=120411&picture=cooking-spanish-paella[publicdomainpictures.net]
+* Toddler: https://commons.wikimedia.org/wiki/File:Toddler_running_and_falling.jpgBy Jamie Campbell from Emsworth (nr Portsmouth), U.K (Falling down) (CC BY 2.0), via Wikimedia Commons]
+* Traditional vs ML algorithms: https://medium.com/@gianlucahmd/grandma-should-understand-artificial-intelligence-heres-how-i-explained-her-c92ed3d2eea8[Grandma should understand Artificial Intelligence. Here’s how I explained her.]
+* Turkey: https://commons.wikimedia.org/wiki/File:Wild_Turkeys.jpg[By Vince pahkala (CC BY-SA 3.0), from Wikimedia Commons]
+* Lego: https://flic.kr/p/zqP31y[Steven Depolo/Flickr]

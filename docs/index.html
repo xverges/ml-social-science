@@ -1,33 +1,238 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta content="text/html; charset=" http-equiv="Content-Type">
+<meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
 <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
 <meta content="Asciidoctor 1.5.7.1" name="generator">
-<meta content="Presenter Name" name="author">
-<title>Title Slide</title>
+<meta content="Xavier Vergés" name="author">
+<title>Machine Learning and Social Science</title>
+<link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/3.2.1/css/font-awesome.min.css" rel="stylesheet">
+<style>
+.conum { display: inline-block; color: white !important; background-color: #222222; -webkit-border-radius: 100px; border-radius: 100px; text-align: center; width: 1.2em; height: 1.2em; font-size: 0.9em; font-weight: bold; line-height: 1.2; font-family: Arial, sans-serif; font-style: normal; position: relative; top: -0.1em; }
+.conum * { color: white !important; }
+.conum + b { display: none; }
+.conum:after { content: attr(data-value); }
+.conum:not([data-value]):empty { display: none; }
+.colist table td:first-of-type { padding-right: 0.25em; }
+</style>
 <link href="deck.js/core/deck.core.css" rel="stylesheet">
 <link href="deck.js/extensions/scale/deck.scale.css" media="screen" rel="stylesheet">
 <link href="deck.js/extensions/menu/deck.menu.css" media="screen" rel="stylesheet">
 <link href="deck.js/extensions/navigation/deck.navigation.css" media="screen" rel="stylesheet">
 <link href="deck.js/extensions/status/deck.status.css" media="screen" rel="stylesheet">
-<link href="deck.js/themes/style/web-2.0.css" media="screen" rel="stylesheet">
+<link href="deck.js/themes/style/swiss.css" media="screen" rel="stylesheet">
 <link href="deck.js/themes/transition/fade.css" media="screen" rel="stylesheet">
+<link href="css/xv.css" rel="stylesheet">
 <link href="deck.js/core/print.css" media="print" rel="stylesheet">
 <script src="deck.js/modernizr.custom.js"></script>
 </head>
 <body class="article">
 <div class="deck-container">
 <section class="slide" id="title-slide">
-<h1>Title Slide</h1>
-<span id="author">Presenter Name</span>
+<h1>Machine Learning and Social Science</h1>
+<span id="author">Xavier Vergés</span>
+<br>
+<span id="email"><span class="icon"><i class="icon-twitter"></i></span><a href="https://twitter.com/XavierVerges">@XavierVerges</a> <span class="icon"><i class="icon-tag"></i></span><a href="https://www.ibm.com/analytics/machine-learning">IBM</a></span>
 <br>
 </section>
-<section class="slide" id="_slide_one">
-<h2>Slide One</h2>
-<div class="paragraph"><p>Foo</p></div>
-<div class="paragraph"><p>Bar</p></div>
-<div class="paragraph"><p>World</p></div>
+<section class="slide" id="_agenda">
+<h2>Agenda</h2>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+How do <em>&lt;insert noun&gt;</em> learn?
+</li>
+<li>
+AI, ML, NLP, DL&#8230;&#8203; Hints to navigate the alphabet soup
+</li>
+<li>
+Five main routes to Machine Learning
+</li>
+<li>
+Understanding or predicting?
+</li>
+</ol>
+</div>
+</section>
+<section class="slide" id="_objectives">
+<h2>Objectives</h2>
+<div class="paragraph"><p>.</p></div>
+</section>
+<section class="slide" id="_in_praise_of_feedback_loops">
+<h2>In Praise of Feedback Loops</h2>
+<div class="imageblock slide">
+<div class="content">
+<img alt="feedback loop" src="./images/feedback-loop.png">
+</div>
+</div>
+<div class="quoteblock slide">
+<blockquote>
+Outputs of a system are routed back as inputs as part of a chain of cause-and-effect that forms a loop. <strong>The system can then be said to feed back into itself</strong>.
+</blockquote>
+</div>
+</section>
+<section class="slide" id="_excited_about_a_thermostat_seriously">
+<h2>Excited about a thermostat? Seriously?</h2>
+<div class="imageblock slide">
+<div class="content">
+<img alt="feedback learn" src="./images/feedback-learn.png">
+</div>
+</div>
+<div class="quoteblock slide">
+<blockquote>
+No feedback, no learning.
+</blockquote>
+</div>
+<div class="quoteblock slide">
+<blockquote>
+No feedback, no science.
+</blockquote>
+</div>
+</section>
+<section class="slide canvas-image" id="_evolution" style="background-image: url(./images/evolution.jpg)">
+<div class="paragraph canvas-caption"><p class="xv-top-left">Evolution:<br>
+learning for genes</p></div>
+</section>
+<section class="slide canvas-image" id="_culture" style="background-image: url(./images/cuneiform.jpg)">
+<div class="paragraph canvas-caption"><p class="xv-top-left">Culture:<br>
+learning for societies</p></div>
+</section>
+<section class="slide canvas-image" id="_culture_2" style="background-image: url(./images/rosa-parks.jpg)">
+<div class="paragraph canvas-caption"><p class="xv-top-left">Culture:<br>
+learning for societies<br>
+at a faster pace</p></div>
+</section>
+<section class="slide canvas-image" id="_experience" style="background-image: url(./images/experience.jpg)">
+<div class="paragraph canvas-caption"><p class="xv-top-left">Experience:<br>
+learning for individuals</p></div>
+</section>
+<section class="slide canvas-image" id="_a_new_way_to_learn" style="background-image: url(./images/old-computer.jpg)">
+<div class="paragraph canvas-caption"><p class="xv-top-left">Information technology:<br>
+a new way to learn</p></div>
+</section>
+<section class="slide canvas-image" id="_a_new_way_to_learn_2" style="background-image: url(./images/marenostrum.jpg)">
+<div class="paragraph canvas-caption"><p class="xv-top-left">Information technology:<br>
+a new way to learn<br>
+at a faster pace</p></div>
+</section>
+<section class="slide canvas-image" id="_punched_cards" style="background-image: url(./images/punch_card.jpg)">
+<div class="paragraph canvas-caption"><p class="xv-bottom-left">Think, write,<br>
+send to typist,<br>
+wait for typist,<br>
+wait for computer time slot&#8230;&#8203;</p></div>
+</section>
+<section class="slide canvas-image" id="_ab_testing" style="background-image: url(missing)">
+<div class="paragraph canvas-caption"><p class="missing"><span class="image"><img alt="a b testing" src="./images/a-b-testing.png"></span></p></div>
+<div class="paragraph canvas-caption"><p class="xv-bottom-right">&#46;&#46;&#46; vs learn in a few hours<br>
+if your users like your new idea</p></div>
+</section>
+<section class="slide canvas-image" id="_ah_so_machine_learning_is_a_fancy_name_for_good_old_computing" style="background-image: url(missing)">
+<div class="paragraph canvas-caption"><p class="xv-top-left">Ah! So Machine Learning is<br>
+just a new fancy name for<br>
+good old computing?</p></div>
+</section>
+<section class="slide canvas-image" id="_ah_so_machine_learning_is_a_fancy_name_for_good_old_computing_2" style="background-image: url(./images/no.jpg)">
+<div class="paragraph canvas-caption"><p class="xv-top-left">Ah! So Machine Learning is<br>
+just a new fancy name for<br>
+good old computing?</p></div>
+</section>
+<section class="slide canvas-image" id="_traditional_algorithms" style="background-image: url(./images/cooking.jpg)">
+<div class="paragraph canvas-caption"><p class="xv-top-left"><span class="image"><img alt="traditional algorithms" src="./images/traditional-algorithms.png"></span></p></div>
+</section>
+<section class="slide canvas-image" id="_machine_learning_algorithms" style="background-image: url(./images/toddler.jpg)">
+<div class="paragraph canvas-caption"><p class="xv-top-right"><span class="image"><img alt="ml algorithms" src="./images/ml-algorithms.png"></span></p></div>
+</section>
+<section class="slide canvas-image" id="_alphabet_soup" style="background-image: url(./images/dictionary.jpg)">
+<div class="paragraph canvas-caption"><p class="xv-top-right">Alphabet Soup</p></div>
+</section>
+<section class="slide canvas-image" id="_ai_ml_and_deep_learning" style="background-image: url(./images/ai-ml-dl.png)">
+
+</section>
+<section class="slide canvas-image" id="_the_ai_effect" style="background-image: url(./images/deep-blue.jpg)">
+<div class="paragraph canvas-caption"><p class="xv-top-left">The AI Effect:<br>
+As soon as AI solves a problem,<br>
+the problem is no longer a part of AI</p></div>
+</section>
+<section class="slide" id="_project_debater">
+<h2>Project Debater</h2>
+<iframe
+    width="1120" height="630"
+    src="https://www.youtube-nocookie.com/embed/UeF_N1r91RQ?rel=0"
+    frameborder="0"
+    allow="autoplay; encrypted-media" allowfullscreen>
+</iframe>
+<div class="paragraph"><p><a class="bare" href="https://www.research.ibm.com/artificial-intelligence/project-debater/">https://www.research.ibm.com/artificial-intelligence/project-debater/</a></p></div>
+</section>
+<section class="slide canvas-image" id="_the_inductivist_turkey_induction" style="background-image: url(./images/turkey.jpg)">
+<div class="paragraph canvas-caption"><p class="xv-bottom-right">9:00 AM!</p></div>
+</section>
+<section class="slide canvas-image" id="_supervised_learning" style="background-image: url(./images/supervised-learning.png)">
+<div class="paragraph canvas-caption"><p class="xv-bottom-right">Supervised/Unsupervised Learning</p></div>
+</section>
+<section class="slide canvas-image" id="_the_inductivist_turkey_business_as_usual" style="background-image: url(./images/turkey.jpg)">
+
+</section>
+<section class="slide canvas-image" id="_the_inductivist_turkey_falsified" style="background-image: url(./images/turkey.jpg)">
+<div class="paragraph canvas-caption"><p class="xv-bottom-right">Thanksgiving</p></div>
+</section>
+<section class="slide" id="_the_5_tribes_of_ml">
+<h2>The 5 Tribes of ML</h2>
+<div class="paragraph"><p>From <strong>Pedro Domingo</strong>'s  <em>The Master Algorithm</em>:</p></div>
+<div class="ulist">
+<ul>
+<li class="slide"><p>
+The Symbolists<div class="ulist">
+<ul>
+<li>Work with high-level, human-readable, representations of problems, logic and search</li>
+<li>Expert Systems</li>
+</ul>
+</div></p></li>
+<li class="slide"><p>
+The Connectionists<div class="ulist">
+<ul>
+<li>Focus on re-engineering the brain</li>
+<li>Artificial Neural Networks (Deep Learning)</li>
+</ul>
+</div></p></li>
+<li class="slide"><p>
+The Evolutionaries<div class="ulist">
+<ul>
+<li>Genetic Algorithms</li>
+</ul>
+</div></p></li>
+<li class="slide"><p>
+The Bayesians<div class="ulist">
+<ul>
+<li>Probability-based hypothesis that are updated as more data is processed</li>
+<li>Spam filters</li>
+</ul>
+</div></p></li>
+<li class="slide"><p>
+The Analogizers<div class="ulist">
+<ul>
+<li>Focus on techniques to match pieces of data to each other</li>
+</ul>
+</div></p></li>
+</ul>
+</div>
+</section>
+<section class="slide" id="_how_machines_learn">
+<h2>How Machines Learn</h2>
+<iframe
+    width="1120" height="630"
+    src="https://www.youtube-nocookie.com/embed/R9OHn5ZF4Uo?rel=0"
+    frameborder="0"
+    allow="autoplay; encrypted-media" allowfullscreen>
+</iframe>
+</section>
+<section class="slide" id="_how_machines_really_learn_footnote">
+<h2>How Machines <strong>Really</strong> Learn. [Footnote]</h2>
+<iframe
+    width="1120" height="630"
+    src="https://www.youtube-nocookie.com/embed/wvWpdrfoEv0?rel=0"
+    frameborder="0"
+    allow="autoplay; encrypted-media" allowfullscreen>
+</iframe>
 </section>
 <section class="slide" id="_another_slide">
 <h2>Another Slide</h2>
@@ -41,6 +246,39 @@
 <li class="slide">A</li>
 <li class="slide">B</li>
 <li class="slide">C</li>
+</ul>
+</div>
+</section>
+<section class="slide canvas-image" id="" style="background-image: url(missing)">
+<div class="paragraph"><p>&#160;<br>
+&#160;<br>
+&#160;<br>
+&#160;<br>
+&#160;<br>
+Title-less</p></div>
+<div class="paragraph canvas-caption"><p class="missing">juji
+== Image Attributions</p></div>
+<div class="ulist">
+<ul>
+<li>Feedback Loop: <a href="https://commons.wikimedia.org/w/index.php?curid=35616027">By GliderMaven - Own work, CC0</a></li>
+<li>Learn-Adjust-Do: <a href="https://www.ibm.com/developerworks/community/blogs/beingagile/entry/short_feedback_loops_everywhere">IBM</a></li>
+<li>Evolution: <a href="http://www.flickr.com/photos/esteemedhelga/4457513670/">EDWW day_dae (esteemedhelga)/Flickr</a></li>
+<li>Cuneiform: <a href="https://www.flickr.com/photos/adavey/4735763989">A.Davey/Flickr</a></li>
+<li>Band Aid: <a href="https://www.flickr.com/photos/roadsidepictures/5541307774/">Roadsidepictures/Flickr</a></li>
+<li>IBM 2401 Tape Unit: <a href="https://flic.kr/p/a59Ng">Scott Beale/Flickr</a></li>
+<li>Marenostrum: <a href="https://www.bsc.es/marenostrum/marenostrum">Barcelona Supercomputing Center</a></li>
+<li>Punchcard: <a href="https://www.wired.com/2014/05/tech-time-warp-punched-cards/">Wired/IBM</a></li>
+<li>Mobile Device Farm: <a href="http://www.datacenterdynamics.com/content-tracks/design-build/facebook-runs-massive-mobile-test-lab-in-prineville-data-center/96594.fullarticle">Facebook</a></li>
+<li>A/B Testing: <a href="https://towardsdatascience.com/a-summary-of-udacity-a-b-testing-course-9ecc32dedbb1">Udacity/Google</a></li>
+<li>No: <a href="https://flic.kr/p/bCB2Gb">Henry Burrows/Flickr</a></li>
+<li>AI vs ML diagram: <a href="https://blogs.nvidia.com/blog/2016/07/29/whats-difference-artificial-intelligence-machine-learning-deep-learning-ai/">NVIDIA</a></li>
+<li>Dictionary: <a href="https://flic.kr/p/Je9JdZ">barnimages.com/Flickr</a></li>
+<li>Deep Blue: <a href="https://rarehistoricalphotos.com/kasparov-deep-blue-1997/">Rare Historical Photos</a></li>
+<li>Cooking: <a href="https://www.publicdomainpictures.net/en/view-image.php?image=120411&amp;picture=cooking-spanish-paella">publicdomainpictures.net</a></li>
+<li>Toddler: <a class="bare" href="https://commons.wikimedia.org/wiki/File:Toddler_running_and_falling.jpgBy">https://commons.wikimedia.org/wiki/File:Toddler_running_and_falling.jpgBy</a> Jamie Campbell from Emsworth (nr Portsmouth), U.K (Falling down) (CC BY 2.0), via Wikimedia Commons]</li>
+<li>Traditional vs ML algorithms: <a href="https://medium.com/@gianlucahmd/grandma-should-understand-artificial-intelligence-heres-how-i-explained-her-c92ed3d2eea8">Grandma should understand Artificial Intelligence. Here’s how I explained her.</a></li>
+<li>Turkey: <a href="https://commons.wikimedia.org/wiki/File:Wild_Turkeys.jpg">By Vince pahkala (CC BY-SA 3.0), from Wikimedia Commons</a></li>
+<li>Lego: <a href="https://flic.kr/p/zqP31y">Steven Depolo/Flickr</a></li>
 </ul>
 </div>
 </section>

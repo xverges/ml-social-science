@@ -1,0 +1,52 @@
+h2 {
+    color: grey;
+}
+
+#email {
+    font-size: 0.80em;
+}
+a, a:hover, a:focus, a:active, a:visited {
+    color: grey !important;
+}
+
+.xv-bottom-left {
+    left: 1%;
+    bottom: 1%;
+    text-align: left !important; 
+}
+  
+.xv-top-left {
+    left: 1%;
+    top: 1%; 
+    text-align: left !important; 
+}
+  
+.xv-bottom-right {
+    right: 1%;
+    bottom: 1%; 
+    text-align: right !important; 
+}
+  
+.xv-top-right {
+    right: 1%;
+    top: 1%; }
+  
+.xv-center-up {
+    right: 50%;
+    top: 1%;
+  }
+  
+.xv-center-down {
+    right: 50%;
+    bottom: 1%;
+  }
+
+
+
+
+.bottom-right {
+    text-align: right !important;
+}
+.bottom-left {
+    text-align: left !important;
+}
