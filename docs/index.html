@@ -49,14 +49,28 @@ AI, ML, NLP, DL&#8230;&#8203; Hints to navigate the alphabet soup
 Five main routes to Machine Learning
 </li>
 <li>
-Understanding or predicting?
+Data is the new&#8230;&#8203;
+</li>
+<li>
+Machine Learning and Social Science: Two Cultures
+</li>
+<li>
+Activity: read and tell
 </li>
 </ol>
 </div>
 </section>
 <section class="slide" id="_objectives">
 <h2>Objectives</h2>
-<div class="paragraph"><p>.</p></div>
+<div class="paragraph"><p>I want the audience to</p></div>
+<div class="ulist">
+<ul>
+<li>Become familiar with some Machine Learning concepts</li>
+<li>Understand some of the risks of using data</li>
+<li>Become familiar with the differences of the main world views of Machine Learning and Econometrics</li>
+<li>Consider adding a new feedback loop to their life</li>
+</ul>
+</div>
 </section>
 <section class="slide" id="_in_praise_of_feedback_loops">
 <h2>In Praise of Feedback Loops</h2>
@@ -216,6 +230,12 @@ The Analogizers<div class="ulist">
 </ul>
 </div>
 </section>
+<section class="slide canvas-image" id="_algorithms_and_algorithms_and_algorithms" style="background-image: url(./images/scikit-learn-cheat-sheet.png)">
+
+</section>
+<section class="slide canvas-image" id="_that_another_algorithm_can_help_us_select" style="background-image: url(./images/automatic-statistician.png)">
+
+</section>
 <section class="slide" id="_how_machines_learn">
 <h2>How Machines Learn</h2>
 <iframe
@@ -234,30 +254,104 @@ The Analogizers<div class="ulist">
     allow="autoplay; encrypted-media" allowfullscreen>
 </iframe>
 </section>
-<section class="slide" id="_another_slide">
-<h2>Another Slide</h2>
-<div class="paragraph slide"><p>That&#8217;s all.</p></div>
-<div class="paragraph slide"><p>My Folks</p></div>
+<section class="slide canvas-image" id="_in_praise_of_data" style="background-image: url(./images/astronomical-notes.jpeg)">
+<div class="paragraph canvas-caption"><p class="xv-top-left">The more data,<br>
+the faster a field progresses</p></div>
 </section>
-<section class="slide" id="_yet_another_slide">
-<h2>Yet Another Slide</h2>
+<section class="slide canvas-image" id="_in_praise_of_evidence_informed_policy_making" style="background-image: url(./images/smart-map.png)">
+<div class="paragraph canvas-caption"><p class="xv-top-left">Data enables<br>
+evidence-informed policies</p></div>
+</section>
+<section class="slide canvas-image" id="_in_praise_of_evidence_informed_policy_making_2" style="background-image: url(missing)">
+<div class="paragraph canvas-caption"><p class="xv-top-left">Data enables<br>
+evidence-informed policies<br>
+(that nobody cares about)</p></div>
+<div class="paragraph canvas-caption"><p class="xv-bottom-right"><span class="image"><img alt="truth o meter" src="./images/truth-o-meter.png"></span></p></div>
+</section>
+<section class="slide canvas-image" id="_but_data_is_tricky" style="background-image: url(./images/cheese.png)">
+
+</section>
+<section class="slide canvas-image" id="_and_can_trick_us" style="background-image: url(./images/dinos.png)">
+<div class="paragraph canvas-caption"><p class="xv-bottom-left">All the data sets share<br>
+the same summary statistics</p></div>
+</section>
+<section class="slide canvas-image" id="_data_is_biased_with_our_bias" style="background-image: url(./images/wordvec.jpg)">
+<div class="paragraph canvas-caption"><p class="xv-top-left">Google News corpus:<br>
+<em>father</em> is to <em>doctor</em> as<br>
+<em>mother</em> is to <em>nurse</em></p></div>
+</section>
+<section class="slide canvas-image" id="_two_cultures" style="background-image: url(./images/two-cultures.png)">
+<div class="paragraph canvas-caption"><p class="xv-top-left">Machine Learning and<br>
+Social Science Statistics</p></div>
+</section>
+<section class="slide" id="_understand_or_predict">
+<h2>Understand or Predict?</h2>
 <div class="ulist">
 <ul>
-<li class="slide">A</li>
-<li class="slide">B</li>
-<li class="slide">C</li>
+<li><p>
+<strong>Traditional Econometric Models</strong><div class="ulist">
+<ul>
+<li>Seek to give understanding</li>
+<li>Based on assumptions and probabilities</li>
+<li>Hand-crafted feature selection</li>
+<li>Mostly linear</li>
+<li><strong>data + simple models + advanced math</strong></li>
+</ul>
+</div></p></li>
+<li><p>
+<strong>Machine Learning Models</strong><div class="ulist">
+<ul>
+<li>Seek to give predictive accuracy</li>
+<li>Fewer assumptions</li>
+<li>Automatic feature selection</li>
+<li>Non-linear</li>
+<li><strong>lots of data + complex models + optimizer</strong></li>
+</ul>
+</div></p></li>
 </ul>
 </div>
 </section>
-<section class="slide canvas-image" id="" style="background-image: url(missing)">
-<div class="paragraph"><p>&#160;<br>
-&#160;<br>
-&#160;<br>
-&#160;<br>
-&#160;<br>
-Title-less</p></div>
-<div class="paragraph canvas-caption"><p class="missing">juji
-== Image Attributions</p></div>
+<section class="slide" id="_overfitting">
+<h2>Overfitting</h2>
+<div class="imageblock">
+<div class="content">
+<img alt="overfitting1" src="./images/overfitting1.png">
+</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<img alt="overfitting2" src="./images/overfitting2.png">
+</div>
+</div>
+</section>
+<section class="slide" id="_causality_and_predictions">
+<h2>Causality and Predictions</h2>
+<div class="ulist">
+<ul>
+<li><p>
+Examples<div class="ulist">
+<ul>
+<li>Hotel prices: predicting occupancy vs estimating the effect of raising pricesl</li>
+<li>Crime rates in a zone and number of policeman there</li>
+</ul>
+</div></p></li>
+<li>Determining causation requires understanding</li>
+<li>Accurate predictions can help experimentation as a (sort-of) control group</li>
+</ul>
+</div>
+</section>
+<section class="slide" id="_activity_read_and_tell">
+<h2>Activity: Read and Tell</h2>
+<div class="ulist">
+<ul>
+<li><a href="http://research.google.com/bigpicture/attacking-discrimination-in-ml/">Attacking discrimination with smarter machine learning</a></li>
+<li>Pedro Domingos: <em>To share or not to share, and how and where</em></li>
+<li>Pedro Domingos: <em>A neural network stole my job</em></li>
+</ul>
+</div>
+</section>
+<section class="slide" id="_image_attributions">
+<h2>Image Attributions</h2>
 <div class="ulist">
 <ul>
 <li>Feedback Loop: <a href="https://commons.wikimedia.org/w/index.php?curid=35616027">By GliderMaven - Own work, CC0</a></li>
@@ -279,6 +373,10 @@ Title-less</p></div>
 <li>Traditional vs ML algorithms: <a href="https://medium.com/@gianlucahmd/grandma-should-understand-artificial-intelligence-heres-how-i-explained-her-c92ed3d2eea8">Grandma should understand Artificial Intelligence. Here’s how I explained her.</a></li>
 <li>Turkey: <a href="https://commons.wikimedia.org/wiki/File:Wild_Turkeys.jpg">By Vince pahkala (CC BY-SA 3.0), from Wikimedia Commons</a></li>
 <li>Lego: <a href="https://flic.kr/p/zqP31y">Steven Depolo/Flickr</a></li>
+<li>Astronomical tables: <a class="bare" href="https://commons.wikimedia.org/wiki/File:Astronomical_tables_and_other_notes_on_the_sciences">https://commons.wikimedia.org/wiki/File:Astronomical_tables_and_other_notes_on_the_sciences</a>,<em>in_Latin,_collected_c.1400,_for_use_in_England.</em>(Royal_12_D_VI,_f.67v).jpeg[British Library (Public domain), via Wikimedia Commons]</li>
+<li>Smart map: <a href="https://www.esri.com/arcgis-blog/products/arcgis-online/mapping/how-to-smart-map-in-3-easy-steps/">esri</a></li>
+<li>Datasaurus Dozen: <a href="https://www.autodeskresearch.com/publications/samestats">Autodesk</a></li>
+<li>Word2Vec: <a href="http://wellyzhang.github.io/2016/05/09/demystify-deep-walk/">Chi Zhang</a></li>
 </ul>
 </div>
 </section>

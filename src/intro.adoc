@@ -16,11 +16,19 @@ Xavier Vergés <icon:twitter[]https://twitter.com/XavierVerges[@XavierVerges] ic
 . How do _<insert noun>_ learn?
 . AI, ML, NLP, DL... Hints to navigate the alphabet soup
 . Five main routes to Machine Learning
-. Understanding or predicting?
+. Data is the new...
+. Machine Learning and Social Science: Two Cultures
+. Activity: read and tell
+
 
 == Objectives
 
-. 
+I want the audience to
+
+* Become familiar with some Machine Learning concepts
+* Understand some of the risks of using data
+* Become familiar with the differences of the main world views of Machine Learning and Econometrics
+* Consider adding a new feedback loop to their life
 
 
 == In Praise of Feedback Loops
@@ -227,6 +235,13 @@ From *Pedro Domingo*'s  _The Master Algorithm_:
 * The Analogizers 
 ** Focus on techniques to match pieces of data to each other
 
+[canvas-image=./images/scikit-learn-cheat-sheet.png]
+== Algorithms, and algorithms, and algorithms...
+
+
+[canvas-image=./images/automatic-statistician.png]
+== ... that another algorithm can help us select
+
 
 == How Machines Learn
 
@@ -252,35 +267,98 @@ From *Pedro Domingo*'s  _The Master Algorithm_:
 ++++
 
 
+[canvas-image=./images/astronomical-notes.jpeg]
+== In Praise of Data
+
+[.canvas-caption, position=xv-top-left]
+The more data, +
+the faster a field progresses
 
 
-== Another Slide
+[canvas-image=./images/smart-map.png]
+== In Praise of Evidence-informed Policy-making
 
-[%step]
-That's all.
+[.canvas-caption, position=xv-top-left]
+Data enables +
+evidence-informed policies
 
-[%step]
-My Folks
-
-== Yet Another Slide
-
-[%step]
-* A
-* B
-* C
 
 [canvas-image=missing]
-== {nbsp} 
+== In Praise of Evidence-informed Policy-making
 
-{nbsp} +
-{nbsp} +
-{nbsp} +
-{nbsp} +
-{nbsp} +
-Title-less
+[.canvas-caption, position=xv-top-left]
+Data enables +
+evidence-informed policies +
+(that nobody cares about)
 
-[.canvas-caption, position=missing]
-juji
+[.canvas-caption, position=xv-bottom-right]
+image:./images/truth-o-meter.png[]
+
+[canvas-image=./images/cheese.png]
+== But data is tricky
+
+
+[canvas-image=./images/dinos.png]
+== ... and can trick us
+
+[.canvas-caption, position=xv-bottom-left]
+All the data sets share +
+the same summary statistics
+
+
+[canvas-image=./images/wordvec.jpg]
+== Data is biased (with our bias)
+
+[.canvas-caption, position=xv-top-left]
+Google News corpus:  +
+_father_ is to _doctor_ as +
+_mother_ is to _nurse_
+
+
+[canvas-image=./images/two-cultures.png]
+== Two cultures
+
+[.canvas-caption, position=xv-top-left]
+Machine Learning and +
+Social Science Statistics
+
+== Understand or Predict?
+
+* *Traditional Econometric Models* 
+** Seek to give understanding
+** Based on assumptions and probabilities
+** Hand-crafted feature selection
+** Mostly linear
+** *data + simple models + advanced math*
+
+* *Machine Learning Models*
+** Seek to give predictive accuracy
+** Fewer assumptions
+** Automatic feature selection
+** Non-linear
+** **lots of data + complex models + optimizer**
+
+== Overfitting
+
+image::./images/overfitting1.png[]
+image::./images/overfitting2.png[]
+
+
+== Causality and Predictions
+
+* Examples
+** Hotel prices: predicting occupancy vs estimating the effect of raising pricesl
+** Crime rates in a zone and number of policeman there
+* Determining causation requires understanding
+* Accurate predictions can help experimentation as a (sort-of) control group 
+
+
+== Activity: Read and Tell
+
+* http://research.google.com/bigpicture/attacking-discrimination-in-ml/[Attacking discrimination with smarter machine learning]
+* Pedro Domingos: _To share or not to share, and how and where_
+* Pedro Domingos: _A neural network stole my job_
+
 == Image Attributions
 
 * Feedback Loop: https://commons.wikimedia.org/w/index.php?curid=35616027[By GliderMaven - Own work, CC0]
@@ -302,3 +380,7 @@ juji
 * Traditional vs ML algorithms: https://medium.com/@gianlucahmd/grandma-should-understand-artificial-intelligence-heres-how-i-explained-her-c92ed3d2eea8[Grandma should understand Artificial Intelligence. Here’s how I explained her.]
 * Turkey: https://commons.wikimedia.org/wiki/File:Wild_Turkeys.jpg[By Vince pahkala (CC BY-SA 3.0), from Wikimedia Commons]
 * Lego: https://flic.kr/p/zqP31y[Steven Depolo/Flickr]
+* Astronomical tables: https://commons.wikimedia.org/wiki/File:Astronomical_tables_and_other_notes_on_the_sciences,_in_Latin,_collected_c.1400,_for_use_in_England._(Royal_12_D_VI,_f.67v).jpeg[British Library (Public domain), via Wikimedia Commons]
+* Smart map: https://www.esri.com/arcgis-blog/products/arcgis-online/mapping/how-to-smart-map-in-3-easy-steps/[esri]
+* Datasaurus Dozen: https://www.autodeskresearch.com/publications/samestats[Autodesk]
+* Word2Vec: http://wellyzhang.github.io/2016/05/09/demystify-deep-walk/[Chi Zhang]
